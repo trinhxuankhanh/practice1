@@ -1,0 +1,47 @@
+.banner {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    max-height: 100rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(146, 145, 145, 0.582);
+    overflow: hidden;
+
+    .container-lg {
+        margin: 34rem auto;
+        padding: 0;
+
+        .banner__title {
+            font-size: 8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            max-width: 50%;
+            text-shadow: 0 1rem 1.2rem rgb(133, 133, 133);
+        }
+
+        .banner__description {
+            font-size: 7rem;
+            margin: 2rem 0 4rem;
+            text-transform: uppercase;
+            max-width: 50%;
+            text-shadow: 0 1rem 1.2rem rgb(175, 175, 175);
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .banner {
+        .container-lg {
+            margin: 12rem auto;
+            padding: 0 3rem;
+            .banner__title {
+                font-size: 4rem;
+            }
+
+            .banner__description {
+                font-size: 3rem;
+            }
+        }
+    }
+}

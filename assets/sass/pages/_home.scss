@@ -1,0 +1,39 @@
+body {
+    font-family: "Nanum Gothic", sans-serif;
+
+    .seller {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(235, 235, 235);
+        background: linear-gradient(180deg, rgba(235, 235, 235, 1) 25%, rgba(255, 255, 255, 1) 25%);
+
+        &__checkbox {
+            display: none;
+        }
+
+        &__checkbox:checked + .product {
+            max-height: max-content;
+            transition: 0.5s ease-in;
+        }
+
+        &__icon {
+            cursor: pointer;
+            margin: 5rem 0;
+            img {
+                height: 5rem;
+                width: 5rem;
+            }
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}

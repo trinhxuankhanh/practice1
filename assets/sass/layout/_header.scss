@@ -1,0 +1,106 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    h1 a {
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-bar {
+        outline: none;
+        border: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 1em;
+        display: none;
+        @media (max-width: 992px) {
+            display: flex;
+        }
+        span {
+            display: block;
+            height: 2px;
+            width: 20px;
+            margin: 2px;
+            background: #888;
+        }
+        &.active {
+            background: #333;
+            span {
+                background: white;
+            }
+        }
+        &:hover {
+            background: #e1e1e1;
+            span {
+                background: #444;
+            }
+            &.active {
+                background: #222;
+
+                span {
+                    background: white;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: ease 1s all;
+        @media (max-width: 992px) {
+            opacity: 0;
+            max-height: 0px;
+            overflow: hidden;
+            visibility: none;
+            display: flex;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            flex-direction: column;
+            background-color: #f1f1f1;
+            margin-left: -100%;
+
+            &.active {
+                opacity: 1;
+                max-height: 500px;
+                right: 0;
+                margin-left: 0%;
+                background-color: #e1e1e1;
+                z-index: 1;
+                &:nth-child(1) {
+                    margin-top: 14rem;
+                }
+                li {
+                    display: block;
+                    a {
+                        display: block;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                padding: 3rem 1.5rem;
+                &:hover {
+                    background: #e1e1e1;
+                }
+            }
+        }
+    }
+}

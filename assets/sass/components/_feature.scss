@@ -1,0 +1,53 @@
+.feature {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 8rem;
+    text-decoration: none;
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-height: 8rem;
+            max-width: 8rem;
+        }
+
+        figcaption {
+            margin: 2rem 0;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            color: #4e4c4c;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-align: center;
+        color: black;
+    }
+
+    &:nth-child(2) {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+}
+
+@media (max-width: 992px) {
+    .feature:nth-child(2) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .feature {
+        padding: 4rem 0;
+
+        &:nth-child(2) {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: none;
+            border-left: none;
+        }
+    }
+}

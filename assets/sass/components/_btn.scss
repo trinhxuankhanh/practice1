@@ -1,0 +1,74 @@
+.btn {
+    padding: 1.5rem 2.5rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 20px 1px #7777771f;
+    -moz-box-shadow: 0 1px 20px 1px #7777771f;
+    box-shadow: 0 1px 20px 1px #7777771f;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0 1px 20px 1px #4645451f;
+    }
+
+    &--border {
+        border: 1px solid black;
+        box-shadow: none;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 310%;
+            height: 1px;
+            background-color: black;
+            cursor: default;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            width: 310%;
+            height: 1px;
+            background-color: black;
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .btn--border {
+        &::after,
+        &::before {
+            width: 250%;
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .btn--border {
+        &::after,
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .btn--border {
+        &::after,
+        &::before {
+            width: 50%;
+        }
+    }
+}

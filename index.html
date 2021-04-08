@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/sass/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap-grid.min.css"
+      integrity="sha512-u3fwbINFhOPMJmbfsay1Wlfjan2XMGFDUuj3G3QXZuMizUINdZ8ckpQq+OiI9hPRqKJTbTBPF/wEpxSBnYZj7g=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container-fluid container-lg p-0 mt-5">
+      <ul class="menu">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">shop</a>
+        </li>
+        <li>
+          <a href="#">about me</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+
+      <h1><a href="#">Deina's Bites</a></h1>
+
+      <ul class="menu">
+        <li>
+          <a href="#">instagram</a>
+        </li>
+        <li>
+          <a href="#">facbook</a>
+        </li>
+        <li>
+          <a href="#">youtube</a>
+        </li>
+        <li>
+          <a href="#">Cart</a>
+        </li>
+      </ul>
+      <button class="mobile-bar" onClick="toggleMobileMenu();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="container-fluid p-0">
+      <section
+        class="banner"
+        style="
+          background-image: url(./assets/img/b_digital_art_x4_colored_toned.png);
+        "
+      >
+        <div class="container-fluid container-lg">
+          <h2 class="banner__title">100% natural</h2>
+          <h3 class="banner__description">home make fresh cookies</h3>
+          <button class="btn">shop now</button>
+        </div>
+      </section>
+      <section class="title">
+        <h3>/&nbsp;best sellers</h3>
+        <p>
+          <b>I'm a paragraph. Click here to add your own text and edit me.</b>
+        </p>
+      </section>
+      <section class="seller container-fluid container-lg m-auto p-0">
+        <a href="#" class="card col-12 col-ms-6 col-md-3">
+          <figure class="card__img">
+            <img
+              class="card--green"
+              src="./assets/img/card1.png"
+              alt="white chocolate bites"
+            />
+            <figcaption>white chocolate bites</figcaption>
+          </figure>
+          <var>$1.00</var>
+        </a>
+        <a href="#" class="card col-12 col-ms-6 col-md-3">
+          <figure class="card__img">
+            <img
+              class="card--pink"
+              src="./assets/img/card2.png"
+              alt="oatmeal bites"
+            />
+            <figcaption>oatmeal bites</figcaption>
+          </figure>
+          <var>$2.00</var>
+        </a>
+        <a href="#" class="card col-12 col-ms-6 col-md-3">
+          <figure class="card__img">
+            <img
+              class="card--blue"
+              src="./assets/img/card3.png"
+              alt="jam & poppy"
+            />
+            <figcaption>jam & poppy seed bites</figcaption>
+          </figure>
+          <var>$1.00</var>
+        </a>
+      </section>
+      <section class="slide-content container-fluid container-lg p-0">
+        <a href="#" class="btn btn--border">all cookies</a>
+      </section>
+      <section class="list-product container-fluid container-lg p-0">
+        <section class="title title--mt5">
+          <h3>/&nbsp;follow me for more bites</h3>
+        </section>
+        <input id="showmore" class="list-product__checkbox" type="checkbox" />
+        <ul class="product">
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product1.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product2.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product3.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product4.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product5.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product6.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product7.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product7.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product7.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product7.jpg" alt="product"
+            /></a>
+          </li>
+          <li class="col-md-12 col-lg-6 col-xl-4">
+            <a href="#"
+              ><img src="./assets/img/product7.jpg" alt="product"
+            /></a>
+          </li>
+        </ul>
+
+        <label class="list-product__icon" for="showmore"
+          ><img src="./assets/img/add.svg" alt="more"
+        /></label>
+      </section>
+      <section class="container row m-auto justify-content-center p-0">
+        <a href="#" class="feature col-12 col-md-6 col-lg-3">
+          <figure>
+            <img src="./assets/img/shopping-bag.svg" alt="pick up" />
+            <figcaption>new pick up service</figcaption>
+          </figure>
+          <p>Get it fresh</p>
+        </a>
+        <a href="#" class="feature col-12 col-md-6 col-lg-3">
+          <figure>
+            <img src="./assets/img/vehicle.svg" alt="stuck" />
+            <figcaption>free delivery</figcaption>
+          </figure>
+          <p>Delivered to your door step</p>
+        </a>
+        <a href="#" class="feature col-12 col-md-6 col-lg-3">
+          <figure>
+            <img src="./assets/img/surprise.svg" alt="gift" />
+            <figcaption>special gift wraps</figcaption>
+          </figure>
+          <p>Send a sweet surprise</p>
+        </a>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      <nav class="footer__contact container-fluid container-lg row m-auto p-0">
+        <article class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5>shop:</h5>
+          <ul>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="#">about</a>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="#">shipping</a>&nbsp; / &nbsp;<a href="#">pick up</a>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="#">store policy</a>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="#">contact me</a>
+            </li>
+          </ul>
+        </article>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5>opening:</h5>
+          <ul>
+            <li class="justify-content-center justify-content-sm-start">
+              <p>Mon - Fri:</p>
+              <time>7am - 10pm</time>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <p>Saturday:</p>
+              <time>8am - 10pm</time>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <p>Sunday:</p>
+              <time>8am - 11pm</time>
+            </li>
+          </ul>
+        </article>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5>address:</h5>
+          <ul>
+            <li class="justify-content-center justify-content-sm-start">
+              <address>500 Terry Fancois Street</address>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <address>San Francisco, CA 94158</address>
+            </li>
+            <li class="justify-content-center justify-content-sm-start">
+              <a href="tel:+1234567890">Tel: 123-456-7890</a>
+            </li>
+          </ul>
+        </article>
+        <article class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5>get it fresh</h5>
+          <form>
+            <input type="text" placeholder="Enter your email here" />
+            <input type="submit" value="subscrice now" />
+          </form>
+        </article>
+      </nav>
+      <nav class="footer__copyright container-fluid container-lg row p-0">
+        <p class="col-12 col-md-6 col-lg-6">
+          &copy; by Deina's Bites, Proudly created with <a>Wix.com</a>
+        </p>
+        <ul class="col-12 col-md-6 col-lg-6">
+          <li>
+            <a href="#"
+              ><img src="./assets/img/facebook-logo.svg" alt="facbook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/img/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/img/youtube.svg" alt="youtube" /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script>
+    const toggleMobileMenu = () => {
+      document
+        .querySelectorAll(".menu")
+        .forEach((item) => item.classList.toggle("active"));
+      document.querySelector(".mobile-bar").classList.toggle("active");
+    };
+  </script>
+</html>
