@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 html,
 body,
 div,
@@ -320,9 +321,9 @@ header {
     margin: 34rem auto;
     padding: 0; }
     .banner .container-lg .banner__title {
+      font-family: "Merriweather", serif;
       font-size: 8rem;
       text-transform: uppercase;
-      font-weight: bold;
       max-width: 50%;
       text-shadow: 0 1rem 1.2rem #858585; }
     .banner .container-lg .banner__description {
