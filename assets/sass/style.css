@@ -185,7 +185,7 @@ footer {
       border: none;
       padding: 1rem 2rem;
       font-size: 1.6rem; }
-    footer .footer__contact article form input[type="text"] {
+    footer .footer__contact article form input[type="email"] {
       margin-bottom: 2rem; }
     footer .footer__contact article form input[type="submit"] {
       background-color: #f8d1e6;
@@ -510,7 +510,8 @@ header {
   padding: 0 10rem;
   min-height: 70rem;
   max-height: 70rem;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 1s; }
   .product li {
     display: flex;
     justify-content: center; }
